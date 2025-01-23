@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background-color: #000000;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: red;
+    border-radius: 5rem;
+}
+
+.logo{
+    border-radius: 4px;
+}
+
+ul li a{
+    font-family: "Quicksand";
+}
+
+.card a p{
+    font-size: small;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar-nav li{
+    position: relative;
+}
+
+.navbar-nav li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background: red;
+    border-radius: 7px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    transition: 0.4s all linear;
+}
+.navbar-brand img{
+    border-radius: 4px;
+}
+.navbar-nav li a:hover::after{
+    width: 100%;
+}
+
+.card{
+    border: 0px solid transparent;
+}
+
+.card a p{
+    padding-top: 1.2rem;
+    font-family: "Quicksand";
+    font-size: 15px;
+    padding-left: 3px;
+    font-weight: 600;
+}
+.card a p:hover{
+    color: red;
+}
+
+.col-md-4{
+    font-family: "Quicksand";
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.c{
+    background-color: rgba(82, 7, 7, 0);
+}
+.card img{
+    border-radius: 7px;
+    transition: all 0.5s;
+    box-shadow: 0 7px 17px -8px rgba(0, 0, 0, 1);
+}
+
+.card img:hover{
+    transform: translateY(-10px);
+    transition: all 0.2s linear;
+}
+.col-md-4 img{
+    transition: all 0.3s linear;
+}
+.col-md-4 img:hover{
+    -webkit-transform: scale(0.5);
+    transform: scale(1.03);
+    -webkit-filter: blur(2px) brightness(.3);
+    filter: blur(2px) brightness(0.5);
+}
+
+/* Overview */
+.background-section {
+    height: 60vh;
+    background-color: rgb(15, 4, 35);
+}
+.background-section-comics {
+    height: 45vh;
+    background-color: rgba(255, 255, 255, 0.63);
+}
+
+.background-section img{
+    padding-top: 60px;
+}
+
+.movie-logo {
+    max-width: 400px;
+    margin: 0 auto 1rem auto;
+    display: block;
+    z-index: 10;
+    position: relative;
+}
+
+.overview-section {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: -5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+}
+.overview-section-comics {
+    background-color: rgba(82, 7, 7, 0.432);
+    background-blend-mode: darken;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: -5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+}
+.overview-section-comicspg {
+    background-color: rgba(82, 7, 7, 0.582);
+    background-blend-mode: darken;
+    color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: -5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 5;
+}
+
+.movie-poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.detail-label {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.desc-label {
+    color: #000000;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+.desc-label-comics {
+    color: white;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.detail-content {
+    margin-bottom: 1.5rem;
+}
+
+/* comics */
+.comics-Moon{
+    background-image: url(img/moonComic.jpg);
+    background-size: cover;
+    background-color: #000000ec;
+    background-blend-mode: darken;
+}
+.comics-CapAme{
+    background-image: url(img/cap-ame.jpg);
+    background-size: cover;
+    background-color: #000000ec;
+    background-blend-mode: darken;
+}
+.comics-MiracleMan{
+    background-image: url(img/MiracleManCMC.jpg);
+    background-size: cover;
+    background-color: #000000ec;
+    background-blend-mode: darken;
+}
+.comics-DrDoom{
+    background-image: url(img/DrDoom.jpg);
+    background-size: cover;
+    background-color: #000000ec;
+    background-blend-mode: darken;
+}
+.comics-ImmortalHulk{
+    background-image: url(img/ImmortalHulk.jpg);
+    background-size: cover;
+    background-color: #000000ec;
+    background-blend-mode: darken;
+}
+.comics-Thanos{
+    background-image: url(img/ThanosCmc.jpg);
+    background-size: cover;
+    background-color: #000000ec;
+    background-blend-mode: darken;
+}
+
+nav.shadow{
+    background-color: rgba(0, 0, 0, 0.644);
+    transition: all 0.4s linear;
+}
+
+h1.heading-archive {
+    color: #000000;
+    overflow: hidden;
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+}
+
+h1.heading-archive:after,h1.heading-archive:before {
+    background-color: rgb(195 17 17);
+}
+
+h1.heading-archive {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 15px 0 25px 0
+}
+
+h1.heading-archive:after,h1.heading-archive:before {
+    content: "";
+    display: inline-block;
+    border-radius: 10px;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+
+h1.heading-archive:before {
+    right: .5em;
+    margin-left: -50%
+}
+
+h1.heading-archive:after {
+    left: .5em;
+    margin-right: -50%
+}
+
+
+.mainMovie{
+    background-image: url(img/BGMovies.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    background-color: #0000006e;
+    background-blend-mode: darken;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;    
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+.mainComics{
+    background-image: url(img/BGComics1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    background-color: #00000093;
+    background-blend-mode: darken;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;    
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+.mainAbout{
+    background-image: url(img/BGComics.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    background-color: #00000093;
+    background-blend-mode: darken;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;    
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+
+.mainMovie h1, .mainComics h1{
+    font-size: 50px;
+}
+
+.mainComics p{
+    font-size: 16px;
+}
+
+ul li img{
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.nama{
+    color: #151515;
+    transition: all 0.8s linear;
+    font-family: "Quicksand";
+    font-weight: 700;
+}
+.nama:hover{
+    color: white;
+}
+
+.text-light{
+    font-family: "Quicksand";
+}
+
+.marvel{
+    padding-top: 100px;
+}
+
+.power{
+    font-family: "Quicksand";
+    padding-top: 10px;
+    color: white;
+}
+
+button{
+    color: white;
+    text-decoration: none;
+    height: 40px;
+    width: 150px;
+    background-color: transparent;
+    border-radius: 12px;
+    border: 1px solid white;
+    transition: 0.9s all linear;
+}
+
+button:hover{
+    color: white;
+    background-color: #000000;
+    border: 1px solid black;
+}
+
+.about{
+    font-family: "Quicksand";
+}
+
+.about p{
+    padding-top: 0;
+}
+
+.about h3{
+    padding-top: 30px;
+}
+
+.about h4{
+    padding-top: 30px;
+}
